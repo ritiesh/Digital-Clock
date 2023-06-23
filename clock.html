@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>digital clock</title>
+  </head>
+  <style>
+    body {
+      background: rgb(238, 174, 202);
+      background: radial-gradient(
+        circle,
+        rgba(238, 174, 202, 1) 0%,
+        rgba(148, 187, 233, 1) 100%
+      );
+    }
+    #entire-block {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      padding-top: 20%;
+    }
+    #wrapper {
+      border-width: 3px;
+      border: solid;
+      color: black;
+      font-size: 70px;
+    }
+    #hrs {
+      padding-left: 10px;
+      color: rgb(245, 33, 146);
+    }
+    #mins {
+      color: rgb(245, 33, 146);
+    }
+    #sec {
+      color: rgb(245, 33, 146);
+    }
+    #ampm {
+      color: rgb(245, 33, 146);
+    }
+  </style>
+  <body>
+    <div id="entire-block">
+      <div id="wrapper">
+        <span id="hrs">00</span>
+        <span>:</span>
+        <span id="mins">00</span>
+        <span>:</span>
+        <span id="sec">00</span>
+        <span>:</span>
+        <span id="ampm">AM</span>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
